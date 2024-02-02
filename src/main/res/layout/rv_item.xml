@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/tv_item_chatgpt_outer_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_item_chatgpt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chatgpt"/>
+        <RelativeLayout
+            android:id="@+id/tv_item_chatgpt_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="110dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/message_holder"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_item_chatgpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chatgpt"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_me_outer_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/tv_item_me_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="me"
+            android:layout_alignParentRight="true"/>
+    <RelativeLayout
+        android:id="@+id/tv_item_me_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_holder"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp">
+    <TextView
+        android:id="@+id/tv_item_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="me"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
