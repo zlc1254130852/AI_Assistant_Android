@@ -231,13 +231,13 @@ public class ChatActivity extends Activity implements View.OnClickListener{
         call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                Log.e("TAG-失败：", e.toString() + "");
+                Log.e("TAG-FAILED：", e.toString() + "");
             }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 String string = response.body().string();
-                Log.d("TAG-成功：", string + "");
+                Log.d("TAG-SUCCESS：", string + "");
                 try {
                     JSONObject jsonObject = new JSONObject(string);
                     String parseString = jsonObject.getString("text");
